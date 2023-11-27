@@ -5,6 +5,7 @@ import { v4 } from "uuid";
 const isProdutionAndAuthEnabled =
   process.env.NODE_ENV === "production" &&
   process.env.NEXT_PUBLIC_FF_AUTH_ENABLED === "true";
+  procces.env.NEXT_PUBLIC_WEB_SEARCH_ENABLED === "true";
 
 const requiredAuthEnabledForProduction = () => {
   return isProdutionAndAuthEnabled
