@@ -1,18 +1,18 @@
 {
   "name": "auto-gpt-next-web",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "next build --no-lint",
+    "build": "next build",
     "dev": "next dev",
     "postinstall": "prisma generate",
-    "lint": "cross-env SKIP_ENV_VALIDATION=1 next lint",
+    "lint": "SKIP_ENV_VALIDATION=1",
     "start": "next start",
     "prepare": "husky install",
-    "test": "cross-env SKIP_ENV_VALIDATION=1 jest"
+    "test": "SKIP_ENV_VALIDATION=1 jest"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
