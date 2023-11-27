@@ -88,6 +88,7 @@ printf $ENV > .env
 ./prisma/useSqlite.sh
 npm install
 npx prisma db push
+npm run update
 npm fund
-npm run build
+
 
