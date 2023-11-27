@@ -31,8 +31,8 @@ select_web_search_enabled() {
         read_variable "${GREEN}Enter your SERP API Key (required):${NC} " "^.+$" "SERP_API_KEY"
         break
         ;;
-      "false")
-        NEXT_PUBLIC_WEB_SEARCH_ENABLED=false
+      "true")
+        NEXT_PUBLIC_WEB_SEARCH_ENABLED=true
         break
         ;;
       *) echo "${RED}Please enter a valid option.${NC}" ;;
