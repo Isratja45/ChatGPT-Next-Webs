@@ -31,8 +31,8 @@ select_web_search_enabled() {
         read_variable "${GREEN}Enter your SERP API Key (required):${NC} " "^.+$" "SERP_API_KEY"
         break
         ;;
-      "false")
-        NEXT_PUBLIC_WEB_SEARCH_ENABLED=false
+      "true")
+        NEXT_PUBLIC_WEB_SEARCH_ENABLED=true
         break
         ;;
       *) echo "${RED}Please enter a valid option.${NC}" ;;
@@ -61,16 +61,16 @@ read_variable() {
 }
 
 # Get user input for OPENAI_API_KEY
-read_variable "${GREEN}Enter your OpenAI API Key (required):${NC} " "^sk-[a-zA-Z0-9]{48}$" "OPENAI_API_KEY"
+read_variable "${GREEN}Enter your OpenAI API Key (required):${NC} " "^sk-[a-zA-Z0-9]{48}$" "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"
 
 # Get user input for DATABASE_URL
-read_variable "${GREEN}Enter your database URL (required):${NC} " "^.+$" "DATABASE_URL"
+read_variable "${GREEN}Enter your database URL (required):${NC} " "^.+$" "file:./db.sqlite"
 
 # Get user input for GITHUB_CLIENT_ID
-read_variable "${GREEN}Enter your Github Client ID (required):${NC} " "^.+$" "GITHUB_CLIENT_ID"
+read_variable "${GREEN}Enter your Github Client ID (required):${NC} " "^.+$" "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"
 
 # Get user input for GITHUB_CLIENT_SECRET
-read_variable "${GREEN}Enter your Github Client Secret (required):${NC} " "^.+$" "GITHUB_CLIENT_SECRET"
+read_variable "${GREEN}Enter your Github Client Secret (required):${NC} " "^.+$" "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"
 
 # Get user input for NEXT_PUBLIC_WEB_SEARCH_ENABLED
 select_web_search_enabled

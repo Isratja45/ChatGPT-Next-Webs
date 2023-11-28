@@ -11,7 +11,7 @@ const resetters: (() => void)[] = [];
 const initialAgentState = {
   agent: null,
   isAgentStopped: true,
-  isWebSearchEnabled: false,
+  isWebSearchEnabled: true,
   isAgentPaused: undefined,
 };
 
@@ -48,7 +48,7 @@ const createAgentSlice: StateCreator<AgentSlice> = (set, get) => {
         isAgentStopped: !state.agent?.isRunning,
       }));
     },
-    isWebSearchEnabled: false,
+    isWebSearchEnabled: true,
     setIsWebSearchEnabled: (isWebSearchEnabled) => {
       set(() => ({
         isWebSearchEnabled,
