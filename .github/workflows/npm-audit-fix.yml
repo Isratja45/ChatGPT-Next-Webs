@@ -1,0 +1,16 @@
+            - name: npm-audit-fix
+  # You may pin to the exact commit or the version.
+  # uses: grandmasterdev/github-action-npm-audit-fix@acb53f70fb4406f6b03e9df77ab5a76611b024b5
+  uses: grandmasterdev/github-action-npm-audit-fix@v1.1.0
+  with:
+    # the project working directory
+    working-dir: Isratja45/ChatGPT-Next-Webs
+    # user of github
+    github-user: # default is github-action-committer
+    # email of the github user
+    github-email: # optional
+    # the git remote name
+    github-remote: # optional, default is origin
+    # github token for action operation
+    github-token: # optional
+          
