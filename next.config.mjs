@@ -7,7 +7,7 @@
 
 import nextI18NextConfig from "./next-i18next.config.js";
 
-/** @type {import("next").NextConfig} */
+ @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
   /* If trying out the experimental appDir, comment the i18n config out

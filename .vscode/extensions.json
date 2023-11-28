@@ -1,5 +1,11 @@
 {
     "recommendations": [
-        "editorconfig.editorconfig"
+        "editorconfig.editorconfig",
+        "github.copilot-labs",
+        "github.heygithub",
+        "pulkitgangwar.nextjs-snippets"
+        "github.copilot-labs",
+        "github.heygithub"
+
     ]
 }

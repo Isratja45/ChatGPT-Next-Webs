@@ -29,11 +29,11 @@ select_web_search_enabled() {
     case $opt in
       "true")
         NEXT_PUBLIC_WEB_SEARCH_ENABLED=true
-        read_variable "${GREEN}Enter your SERP API Key (required):${NC} " "^.+$" "SERP_API_KEY"
+        read_variable "${GREEN}Enter your SERP API Key (required):${NC} " "^.+$" "c168cb14aa738f08543c713000031fb04ceb60a03e555bb208ed460c0f521775"
         break
         ;;
-      "false")
-        NEXT_PUBLIC_WEB_SEARCH_ENABLED=false
+      "true")
+        NEXT_PUBLIC_WEB_SEARCH_ENABLED=true
         break
         ;;
       *) echo "${RED}Please enter a valid option.${NC}" ;;
@@ -88,4 +88,7 @@ printf $ENV > .env
 ./prisma/useSqlite.sh
 npm install
 npx prisma db push
-npm run dev
+npm run update
+npm fund
+
+
